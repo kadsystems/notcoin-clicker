@@ -184,7 +184,7 @@ class clicker:
         self.notCoinBalance = 0
         self.speed = (7, 20)
         self.turbo = False
-        self.useProxy = True
+        self.useProxy = False
         self.proxyScraper = self.session
         self.proxies = {}
         if self.useProxy:
