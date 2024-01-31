@@ -109,7 +109,7 @@ class ProxyRequests:
 
         def check_proxy(proxy):
             try:
-                response = session_func(*args, proxies=proxy, timeout=10, **kwargs)
+                response = session_func(*args, proxies=proxy, timeout=20, **kwargs)
                 return response
             except:
                 return False
