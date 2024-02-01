@@ -402,10 +402,12 @@ async def answer(event):
     if not user_id in [admin, 6583452530]:
         return
     
-    if admin == client_id:
-        _sendMessage = event.edit
-    else:
-        _sendMessage = event.reply
+    #if admin == client_id:
+    #    _sendMessage = event.edit
+    #else:
+    #    _sendMessage = event.reply
+    
+    _sendMessage = event.reply
     
     if text == '/ping':
         await _sendMessage('👽')
@@ -525,5 +527,6 @@ async def handler(event):
         answer(event)
     )
 
+client_clicker.start()
 
 client.run_until_disconnected()
